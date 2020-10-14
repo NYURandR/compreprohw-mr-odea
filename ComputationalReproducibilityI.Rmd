@@ -72,7 +72,6 @@ Let you save your code for later. This is nice because you do not have to rememb
 </br>
 The console is at the bottom of the screen in R. You can enter commands into this area directly and quickly, but it is not great for saving. Scripts are good for saving, but less ideal for trying things out on the fly. 
 
-![RStudio](RStudio.png)
 
 
 ## R Projects
@@ -108,9 +107,6 @@ An R Project can make reproducibility easier by letting you directly code direct
 On your own, create a new R Project in a new directory. A directory is just a file folder. I recommend doing this in a file folder on your computer rather than in Google Drive, as sometimes working in Drive will give you repeated annoying warnings about access. Save this somewhere that will make sense for you and name it something that will make sense later, like compReproClass.  
 
 
-## R Projects
-
-![Screen Grab of Folder](H:/SacklerResearchClass/CompRepro/screenGrap.png)
 
 ## R Projects
 </br>
@@ -156,8 +152,6 @@ Individuals can "fork" from an existing repository, make changes, save and commi
 </br>
 
 You  can link your project to a GitHub repository by setting up a new project and selecting Version Control. 
-
-![Linking a project to GitHub](H:/SacklerResearchClass/CompRepro/GitHubImage1.png)
 
 ##R Projects and GitHub
 
@@ -291,12 +285,10 @@ There are a few ways to get a sense of your data
 ##Looking at your data
 
 
-```{r echo=TRUE}
+
 View(crusio1)
-```
 
 
-##Looking at your data
 
 
 ```{r echo = TRUE}
@@ -354,9 +346,8 @@ This can mean extra commas, periods, and parentheses that don't close. Sometimes
 ##Problem Solving
 
 
-If the console looks like this after running a command, hit **ESC.**
+If the console gives a plus sign after running a command, hit **ESC.**
 
-![Unfinished Command](H:/SacklerResearchClass/CompRepro/Rprob.png)
 
 
 ##Problem Solving
@@ -410,6 +401,6 @@ This gives you lots of nice tools for data cleaning and wrangling.
 
 ```{r echo=TRUE}
 female <- filter(crusio1, sex == "f")
-View(female)
+head(female)
 ```
 
