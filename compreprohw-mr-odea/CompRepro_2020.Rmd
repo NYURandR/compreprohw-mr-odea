@@ -1,0 +1,46 @@
+---
+title: "Computational Reproducibility"
+author: "Fred LaPolla"
+date: "10/14/2020"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown file
+
+This file, an R Markdown lets you combine plain text, in the white spaces, and code chunks, in the gray. The text is not really code, but can be used to communicate, while the code chunks let you combine the actual analysis you are running alongside the results. This means someone can see exactly what you did to get your results.
+
+To add a chunk either click on the green Insert button and choose R or hit Command + Option + i (Mac) or Ctrl + Alt + i (PC)
+
+```{r}
+3+3
+```
+
+## Homework
+
+1) Create an R Project to pull this file from GitHub. 
+
+Done. 
+
+2) Please describe one of the ways that Wilson et. al. suggest is a good practice for computational reproducibility and how a tool like R can be used. Write your answer below.
+
+One of the practices that Wilson et al. suggest for maintaining good computational reproducibility is to track changes to the data/project over time. Wilson et al. suggest using a version control system such as Git for automatically keeping track of changes to a project every time it is saved. Git can be integrated with R studio so that all data analysis and script changes are automatically recorded when changes are saved. This makes it easier to collaborate with others on a project and keep track when something is changed by one collaborator. This also allows for reverting to previous versions if changes were made in error. Rstudio can be used to track changes by electing to create a version control directory through Git when creating a new R project. R is optimal for reproducible data analysis because data analysis steps can be saved as script files, which can be re-run by anyone with the script file and source data files. 
+
+3) Add a code chunk and find the square root of 4 to the 13th power. If you are unsure of what command to use, google it. 
+
+```{r}
+# Finding the square root of 4 to the 13th power
+sqrt(4^13)
+```
+
+
+4) Push this homework to the GitHub repository for the homework. 
+
+Done.
+
+
+
+
